@@ -45,7 +45,6 @@ var spotifyMeCapn = function() {
         // Picking artist, song name, preview, and album from object that the api returns. 
 		var songs = data.tracks.items;
 		for (var i = 0; i < songs.length; i++) {
-			console.log(i);
 			console.log('artist(s): ' + songs[i].artists.map(getArtistsName));
 			console.log('song name: ' + songs[i].name);
 			console.log('preview song: ' + songs[i].preview_url);
